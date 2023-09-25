@@ -1,0 +1,13 @@
+ancestor(X,Y) :- parent(X,Z),ancestor(Z,Y).
+ancestor(X,Y) :- parent(X,Y).
+father(fred,carolIII).
+father(jack,fred).
+father(tom,amy).
+father(tony,carolII).
+mother(amy,fred).
+mother(carolI,carolII).
+mother(carolII,carolIII).
+mother(grace,amy).
+parent(X,Y) :- father(X,Y);mother(X,Y).
+:-type(father(father:string,child:string)).
+:-type(mother(mother:string,child:string)).

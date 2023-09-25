@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="lib">
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/antlr.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/xom-1.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/jdom-1.0.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/oro-2.0.8.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/stax-1.2.0.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/dom4j-1.6.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/jmock-1.0.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/junit-3.8.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/jide-oss-3.4.0.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/stax-api-1.0.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/xml-writer-0.2.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/joda-time-1.2.1.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/cglib-nodep-2.1_3.jar" />
+    <archive path="C:/Users/Sergio/IdeaProjects/acide/lib/xpp3_min-1.1.3.4.O.jar" />
+  </library>
+</eclipse-userlibraries>
+

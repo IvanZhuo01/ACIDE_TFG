@@ -1,0 +1,798 @@
+%
+%% State saved at 22:16:39 on 1-23-2022.
+%
+:- abolish(strata/1).
+:- dynamic strata/1.
+strata([(ds/2,2),(employee/3,1),(p/1,2),(parking/2,1),(q/2,1),(r/1,1),(s/1,1),(t/2,1)]).
+
+:- abolish(optimize_cf/1).
+:- dynamic optimize_cf/1.
+optimize_cf(on).
+
+:- abolish(t_closure_comp/2).
+:- dynamic t_closure_comp/2.
+t_closure_comp(~, prolog).
+
+:- abolish(goal_expansion/2).
+:- dynamic goal_expansion/2.
+goal_expansion('chr get_mutable'(A,B), (write(C),nl,get_mutable(A,B))) :-
+        prolog_load_context(term_position, C),
+        write(C),
+        nl.
+goal_expansion('chr update_mutable'(A,B), update_mutable(A,B)).
+goal_expansion('chr create_mutable'(A,B), create_mutable(A,B)).
+goal_expansion('chr default_store'(A), global_term_ref_1(A)).
+
+:- abolish(fuzzy_relation_property/2).
+:- dynamic fuzzy_relation_property/2.
+:- abolish(consult/2).
+:- dynamic consult/2.
+:- abolish(my_rule_modes/3).
+:- dynamic my_rule_modes/3.
+:- abolish(my_functional_dependency/4).
+:- dynamic my_functional_dependency/4.
+:- abolish(multiline/1).
+:- dynamic multiline/1.
+multiline(off).
+
+:- abolish(compact_listings/1).
+:- dynamic compact_listings/1.
+compact_listings(on).
+
+:- abolish(unfold/1).
+:- dynamic unfold/1.
+unfold(off).
+
+:- abolish(ilog/1).
+:- dynamic ilog/1.
+ilog(off).
+
+:- abolish(cf_lookups/1).
+:- dynamic cf_lookups/1.
+:- abolish(rdb_predicates/1).
+:- dynamic rdb_predicates/1.
+rdb_predicates([]).
+
+:- abolish(my_default_col_expr/4).
+:- dynamic my_default_col_expr/4.
+:- abolish(error/1).
+:- dynamic error/1.
+error(0).
+
+:- abolish(rdb_id/2).
+:- dynamic rdb_id/2.
+:- abolish(time_format/1).
+:- dynamic time_format/1.
+time_format([:,'HH','Mi','SS']).
+
+:- abolish(show_sql/1).
+:- dynamic show_sql/1.
+show_sql(off).
+
+:- abolish(date_format/1).
+:- dynamic date_format/1.
+date_format([-,'YYYY','MM','DD']).
+
+:- abolish(shell_exit_code/1).
+:- dynamic shell_exit_code/1.
+shell_exit_code(0).
+
+:- abolish(start_path/1).
+:- dynamic start_path/1.
+start_path('c:/users/fernan/desktop/tfg datalog cristina/acide/').
+
+:- abolish(format_timing/1).
+:- dynamic format_timing/1.
+format_timing(on).
+
+:- abolish(check_sql_duplicated_column_values/1).
+:- dynamic check_sql_duplicated_column_values/1.
+check_sql_duplicated_column_values(on).
+
+:- abolish(debug_max_questions/1).
+:- dynamic debug_max_questions/1.
+:- abolish('$rand'/2).
+:- dynamic '$rand'/2.
+:- abolish(oracle_views/1).
+:- dynamic oracle_views/1.
+:- abolish(local_predicates/1).
+:- dynamic local_predicates/1.
+local_predicates([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2]).
+
+:- abolish(opened_db/4).
+:- dynamic opened_db/4.
+opened_db('$des', '$void', '$des', []).
+
+:- abolish(processing_error/1).
+:- dynamic processing_error/1.
+:- abolish(hypothetical/1).
+:- dynamic hypothetical/1.
+hypothetical(on).
+
+:- abolish(trusted_views/1).
+:- dynamic trusted_views/1.
+:- abolish(last_type_error/1).
+:- dynamic last_type_error/1.
+last_type_error(_).
+
+:- abolish(fuzzy_relation/1).
+:- dynamic fuzzy_relation/1.
+:- abolish(show_compilations/1).
+:- dynamic show_compilations/1.
+show_compilations(off).
+
+:- abolish(check_sql_constant_column/1).
+:- dynamic check_sql_constant_column/1.
+check_sql_constant_column(on).
+
+:- abolish(undef_pred_warnings/1).
+:- dynamic undef_pred_warnings/1.
+undef_pred_warnings(on).
+
+:- abolish(development/1).
+:- dynamic development/1.
+development(off).
+
+:- abolish(timing/1).
+:- dynamic timing/1.
+timing(off).
+
+:- abolish(gen_buggy/1).
+:- dynamic gen_buggy/1.
+:- abolish(my_statistics/1).
+:- dynamic my_statistics/1.
+my_statistics(off).
+
+:- abolish(table_modified/1).
+:- dynamic table_modified/1.
+table_modified(connection_table('$des',employee)).
+table_modified(connection_table('$des',parking)).
+
+:- abolish(complete_flag/5).
+:- dynamic complete_flag/5.
+complete_flag(134431755, r/1, r(_), yes, []).
+complete_flag(128778644, p/1, p(_), yes, []).
+
+:- abolish(buggy/1).
+:- dynamic buggy/1.
+:- abolish(non_recursive_predicates/1).
+:- dynamic non_recursive_predicates/1.
+non_recursive_predicates([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2]).
+
+:- abolish(pred_id/2).
+:- dynamic pred_id/2.
+:- abolish(null_id/1).
+:- dynamic null_id/1.
+null_id(12).
+
+:- abolish(my_odbc_query_handle/1).
+:- dynamic my_odbc_query_handle/1.
+:- abolish(query_elapsed_time/3).
+:- dynamic query_elapsed_time/3.
+query_elapsed_time(0, _, _).
+
+:- abolish(fuzzy_answer_subsumption/1).
+:- dynamic fuzzy_answer_subsumption/1.
+fuzzy_answer_subsumption(on).
+
+:- abolish(et_lookups/1).
+:- dynamic et_lookups/1.
+:- abolish(pretty_print/1).
+:- dynamic pretty_print/1.
+pretty_print(on).
+
+:- abolish(command_instance_id/1).
+:- dynamic command_instance_id/1.
+command_instance_id(103).
+
+:- abolish(t_norm/2).
+:- dynamic t_norm/2.
+:- abolish(gen_children_density/1).
+:- dynamic gen_children_density/1.
+gen_children_density(70).
+
+:- abolish(debug_statistics/1).
+:- dynamic debug_statistics/1.
+debug_statistics(on).
+
+:- abolish(dictionary/1).
+:- dynamic dictionary/1.
+dictionary([]).
+
+:- abolish(sql_debug_state/2).
+:- dynamic sql_debug_state/2.
+:- abolish(display_banner/1).
+:- dynamic display_banner/1.
+display_banner(on).
+
+:- abolish(disabled_log/1).
+:- dynamic disabled_log/1.
+disabled_log([]).
+
+:- abolish(indexing/1).
+:- dynamic indexing/1.
+indexing(on).
+
+:- abolish(parse_external_sql/1).
+:- dynamic parse_external_sql/1.
+parse_external_sql(on).
+
+:- abolish(lambda_cut/1).
+:- dynamic lambda_cut/1.
+lambda_cut(0.0).
+
+:- abolish(weak_negation/1).
+:- dynamic weak_negation/1.
+:- abolish(tc_tables/1).
+:- dynamic tc_tables/1.
+:- abolish(parsing_only/1).
+:- dynamic parsing_only/1.
+parsing_only(off).
+
+:- abolish(optimize_sn/1).
+:- dynamic optimize_sn/1.
+optimize_sn(off).
+
+:- abolish(tc_domain/2).
+:- dynamic tc_domain/2.
+tc_domain(-5, 5).
+
+:- abolish(hyp_program_asserted/7).
+:- dynamic hyp_program_asserted/7.
+:- abolish(debug_dl_root_node/1).
+:- dynamic debug_dl_root_node/1.
+debug_dl_root_node(p/1).
+
+:- abolish(weak_unification/1).
+:- dynamic weak_unification/1.
+weak_unification(a1).
+
+:- abolish(debug_dl_file/1).
+:- dynamic debug_dl_file/1.
+debug_dl_file('c:/users/fernan/desktop/tfg datalog cristina/acide/debug/_debug_dl_default_file.dl').
+
+:- abolish(display_answer/1).
+:- dynamic display_answer/1.
+display_answer(on).
+
+:- abolish(output/1).
+:- dynamic output/1.
+output(on).
+
+:- abolish('$rand'/3).
+:- dynamic '$rand'/3.
+:- abolish(rule_id/1).
+:- dynamic rule_id/1.
+rule_id(37).
+
+:- abolish(last_syntax_error/5).
+:- dynamic last_syntax_error/5.
+last_syntax_error(_, 1000000, datalog, _, _).
+
+:- abolish(tc_size/2).
+:- dynamic tc_size/2.
+tc_size(2, 7).
+
+:- abolish(gen_number_of_table_columns/1).
+:- dynamic gen_number_of_table_columns/1.
+gen_number_of_table_columns(4).
+
+:- abolish(user_variable/2).
+:- dynamic user_variable/2.
+:- abolish(my_integrity_constraint/10).
+:- dynamic my_integrity_constraint/10.
+:- abolish(gen_number_of_views/1).
+:- dynamic gen_number_of_views/1.
+:- abolish(recompute_pdg/1).
+:- dynamic recompute_pdg/1.
+:- abolish(error/0).
+:- dynamic error/0.
+:- abolish(autosave/1).
+:- dynamic autosave/1.
+autosave(off).
+
+:- abolish(order_answer/1).
+:- dynamic order_answer/1.
+order_answer(on).
+
+:- abolish(optimize_nrp/1).
+:- dynamic optimize_nrp/1.
+optimize_nrp(on).
+
+:- abolish(time_format_str/1).
+:- dynamic time_format_str/1.
+time_format_str('HH:Mi:SS').
+
+:- abolish(duplicates/1).
+:- dynamic duplicates/1.
+duplicates(off).
+
+:- abolish(safe/1).
+:- dynamic safe/1.
+safe(off).
+
+:- abolish(my_primary_key/3).
+:- dynamic my_primary_key/3.
+:- abolish(et_entries/1).
+:- dynamic et_entries/1.
+:- abolish(fp_info/1).
+:- dynamic fp_info/1.
+fp_info(off).
+
+:- abolish(datalog/7).
+:- dynamic datalog/7.
+datalog((p(A):-s(A)), ['X'=A], 0, [], (3,3), 1, source).
+datalog((p(A):-q(A,B),not r(B)), ['X'=A,'B'=B], 1, [], (4,4), 1, source).
+datalog(s(f), [], 2, [], (6,6), 1, source).
+datalog((s(A):-t(B,A),r(B)), ['X'=A,'B'=B], 3, [], (7,7), 1, source).
+datalog((t(b,A):-q(c,A),r(A)), ['X'=A], 4, [], (9,9), 1, source).
+datalog((t(A,g):-r(A)), ['X'=A], 5, [], (10,10), 1, source).
+datalog(q(a,c), [], 6, [], (15,15), 1, source).
+datalog(q(e,e), [], 7, [], (16,16), 1, source).
+datalog(q(c,d), [], 8, [], (17,17), 1, source).
+datalog(r(a), [], 9, [], (19,19), 1, source).
+datalog(r(b), [], 10, [], (20,20), 1, source).
+datalog(r(c), [], 11, [], (21,21), 1, source).
+datalog(employee(anderson,accounting,1200), [], 12, [], [], asserted((2022,1,23,20,31,15)), source).
+datalog(employee(andrews,accounting,1200), [], 13, [], [], asserted((2022,1,23,20,31,15)), source).
+datalog(employee(arlingon,accounting,1000), [], 14, [], [], asserted((2022,1,23,20,31,15)), source).
+datalog(employee(nolan,'$NULL'(0),'$NULL'(1)), [], 15, [], [], asserted((2022,1,23,20,31,15)), source).
+datalog(employee(norton,'$NULL'(2),'$NULL'(3)), [], 16, [], [], asserted((2022,1,23,20,31,15)), source).
+datalog(employee(randall,resources,800), [], 17, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(employee(sanders,sales,'$NULL'(4)), [], 18, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(employee(silver,sales,1000), [], 19, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(employee(smith,sales,1000), [], 20, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(employee(steel,sales,1020), [], 21, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(employee(sullivan,sales,'$NULL'(5)), [], 22, [], [], asserted((2022,1,23,20,31,16)), source).
+datalog(parking(anderson,'a-1'), [], 30, [], [], asserted((2022,1,23,20,31,17)), source).
+datalog(parking(randall,'r-1'), [], 31, [], [], asserted((2022,1,23,20,31,17)), source).
+datalog(parking(silver,'s-1'), [], 32, [], [], asserted((2022,1,23,20,31,17)), source).
+datalog((ds(A,B):-group_by(employee(C,A,D),[2],[A],B=max(D))), ['A'=A,'B'=B,'_C'=C,'D'=D], 33, [], [], asserted((2022,1,23,20,31,17)), compilation((ds(E,F):-group_by(employee(G,E,H),[E],F=max(H))),['D'=H,'_C'=G,'B'=F,'A'=E],[])).
+
+:- abolish(nulls/1).
+:- dynamic nulls/1.
+nulls(on).
+
+:- abolish(first_iter/2).
+:- dynamic first_iter/2.
+first_iter([], true).
+
+:- abolish(tc_views/1).
+:- dynamic tc_views/1.
+:- abolish(display_nbr_of_tuples/1).
+:- dynamic display_nbr_of_tuples/1.
+display_nbr_of_tuples(on).
+
+:- abolish(my_log/1).
+:- dynamic my_log/1.
+my_log([]).
+
+:- abolish(db_rules/1).
+:- dynamic db_rules/1.
+:- abolish(et/5).
+:- dynamic et/5.
+et(214425603, r(a), (9,[]), [], 1).
+et(71377182, r(b), (10,[]), [], 1).
+et(66056933, r(c), (11,[]), [], 1).
+et(40268815, p(f), (0,[(2,[])]), [], 1).
+et(154472849, p(g), (0,[(3,[])]), [], 1).
+et(144887051, p(e), (1,[]), [], 1).
+et(97051666, p(c), (1,[]), [], 1).
+
+:- abolish(ct_entries/1).
+:- dynamic ct_entries/1.
+:- abolish(my_table/3).
+:- dynamic my_table/3.
+my_table('$des', dual, 0).
+my_table('$des', select_not_null, 3).
+my_table(A, B, C) :-
+        opened_db(A),
+        A\=='$des',
+        my_odbc_get_table_arity(A, B, C).
+my_table('$des', employee, 3).
+my_table('$des', parking, 2).
+my_table('$des', ds, 2).
+
+:- abolish(dependent_restricted_predicates/1).
+:- dynamic dependent_restricted_predicates/1.
+dependent_restricted_predicates([]).
+
+:- abolish(my_candidate_key/3).
+:- dynamic my_candidate_key/3.
+:- abolish(listing_hide_identifier/1).
+:- dynamic listing_hide_identifier/1.
+:- abolish(type_inferencing/1).
+:- dynamic type_inferencing/1.
+type_inferencing(on).
+
+:- abolish(recursive_predicates/1).
+:- dynamic recursive_predicates/1.
+recursive_predicates([]).
+
+:- abolish(host_safe/1).
+:- dynamic host_safe/1.
+host_safe(off).
+
+:- abolish(csv/1).
+:- dynamic csv/1.
+:- abolish(fp_iterations/1).
+:- dynamic fp_iterations/1.
+fp_iterations(1).
+
+:- abolish(semantic_error/1).
+:- dynamic semantic_error/1.
+:- abolish(last_query_elapsed_time/4).
+:- dynamic last_query_elapsed_time/4.
+last_query_elapsed_time(0, 1, 0, 1).
+
+:- abolish(optimize_cc/1).
+:- dynamic optimize_cc/1.
+optimize_cc(on).
+
+:- abolish(limited_domain_predicates/1).
+:- dynamic limited_domain_predicates/1.
+limited_domain_predicates([]).
+
+:- abolish(global_timeout/1).
+:- dynamic global_timeout/1.
+global_timeout(off).
+
+:- abolish(state/2).
+:- dynamic state/2.
+state(0, [language(datalog),compact_listings(off),verbose(off),check_ic(on),optimize_cf(on),prompt(des),optimize_nrp(on),safety_warnings(on),sql_semantic_check(on),simplification(off),pretty_print(on),date_format([-,'YYYY','MM','DD']),time_format([:,'HH','Mi','SS']),output(on),timeout(off),keep_answer_table(on),type_inferencing(on),language(datalog),multiline(off),parsing_only(off),silent(off),des_sql_solving(off),disabled_log([])]).
+
+:- abolish(reorder_goals/1).
+:- dynamic reorder_goals/1.
+reorder_goals(off).
+
+:- abolish(keep_answer_table/1).
+:- dynamic keep_answer_table/1.
+keep_answer_table(on).
+
+:- abolish(random_seed/1).
+:- dynamic random_seed/1.
+random_seed(2060246).
+
+:- abolish(ddb_predicates/1).
+:- dynamic ddb_predicates/1.
+ddb_predicates([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2]).
+
+:- abolish(silent/1).
+:- dynamic silent/1.
+silent(off).
+
+:- abolish(singleton_warnings/1).
+:- dynamic singleton_warnings/1.
+singleton_warnings(on).
+
+:- abolish(return_code/1).
+:- dynamic return_code/1.
+return_code(0).
+
+:- abolish(datalog_persistent/3).
+:- dynamic datalog_persistent/3.
+:- abolish(fuzzy_expansion/1).
+:- dynamic fuzzy_expansion/1.
+fuzzy_expansion(des).
+
+:- abolish(display_statistics/1).
+:- dynamic display_statistics/1.
+display_statistics(off).
+
+:- abolish(my_not_nullables/3).
+:- dynamic my_not_nullables/3.
+:- abolish(answer_table/1).
+:- dynamic answer_table/1.
+answer_table(schema_data(p(col_1:top),[p(c),p(e),p(f),p(g)])).
+
+:- abolish(os/1).
+:- dynamic os/1.
+os(windows).
+
+:- abolish(debug_dl_state/1).
+:- dynamic debug_dl_state/1.
+debug_dl_state(u_valid(r,no)).
+
+:- abolish(called/3).
+:- dynamic called/3.
+:- abolish(debug_dl_buggy/1).
+:- dynamic debug_dl_buggy/1.
+debug_dl_buggy([buggy([r],buggy,[])]).
+
+:- abolish(positions/1).
+:- dynamic positions/1.
+positions([1]).
+
+:- abolish(debug_dl_options/1).
+:- dynamic debug_dl_options/1.
+debug_dl_options([answer(no)]).
+
+:- abolish(extensional_predicates/1).
+:- dynamic extensional_predicates/1.
+extensional_predicates([employee/3,parking/2,q/2,r/1]).
+
+:- abolish(language/1).
+:- dynamic language/1.
+language(datalog).
+
+:- abolish(edb_retrievals/1).
+:- dynamic edb_retrievals/1.
+:- abolish(last_autoview/1).
+:- dynamic last_autoview/1.
+last_autoview((answer(A):-p(A))).
+
+:- abolish(system_mode/1).
+:- dynamic system_mode/1.
+system_mode(des).
+
+:- abolish(current_db/2).
+:- dynamic current_db/2.
+current_db('$des', '$des').
+
+:- abolish(gen_column_type/1).
+:- dynamic gen_column_type/1.
+gen_column_type(number(integer)).
+
+:- abolish(skipped_lines/1).
+:- dynamic skipped_lines/1.
+:- abolish(debug_sql_options/1).
+:- dynamic debug_sql_options/1.
+:- abolish(des_sql_solving/1).
+:- dynamic des_sql_solving/1.
+des_sql_solving(off).
+
+:- abolish(my_modes/2).
+:- dynamic my_modes/2.
+:- abolish(host_statistics/1).
+:- dynamic host_statistics/1.
+:- abolish(safety_warnings/1).
+:- dynamic safety_warnings/1.
+safety_warnings(on).
+
+:- abolish(format_datetime/1).
+:- dynamic format_datetime/1.
+format_datetime(on).
+
+:- abolish(optimize_st/1).
+:- dynamic optimize_st/1.
+optimize_st(off).
+
+:- abolish(ct_lookups/1).
+:- dynamic ct_lookups/1.
+:- abolish(debug_questions/1).
+:- dynamic debug_questions/1.
+debug_questions(4).
+
+:- abolish(idb_retrievals/1).
+:- dynamic idb_retrievals/1.
+:- abolish(et_retrievals/1).
+:- dynamic et_retrievals/1.
+:- abolish(check_ic/1).
+:- dynamic check_ic/1.
+check_ic(on).
+
+:- abolish(date_format_str/1).
+:- dynamic date_format_str/1.
+date_format_str('YYYY-MM-DD').
+
+:- abolish(tapi_log/1).
+:- dynamic tapi_log/1.
+tapi_log(off).
+
+:- abolish(simplification/1).
+:- dynamic simplification/1.
+simplification(off).
+
+:- abolish(computed_tuples/5).
+:- dynamic computed_tuples/5.
+:- abolish(my_view/9).
+:- dynamic my_view/9.
+my_view(A, B, C, D, sql, [], [], [], []) :-
+        A\=='$des',
+        my_table(A, B, C),
+        get_sql_view_text_from_connection(A, B, E),
+        parse_sql_query((D,_), E).
+my_view('$des', ds, 2, select(all,top(all),no_offset,[expr(attr('$t0',department,_),'$a3',_),expr(max(attr('$t0',salary,'$a5')),'$a4',_)],[],from([(employee,['$t0',attr(employee,name,'$a0'),attr(employee,department,'$a1'),attr(employee,salary,'$a2')])]),where(true),group_by([expr(attr('$t0',department,'$a7'),'$a6',_)]),having(true),order_by([],[])), sql, [((ds(A,B):-group_by(employee(C,A,D),[A],B=max(D))),['D'=D,'_C'=C,'B'=B,'A'=A])], [33], [], []).
+
+:- abolish(answer_table_modified/1).
+:- dynamic answer_table_modified/1.
+answer_table_modified(true).
+
+:- abolish(db_schema_modified/1).
+:- dynamic db_schema_modified/1.
+db_schema_modified(true).
+
+:- abolish(debug_sql_current_question/1).
+:- dynamic debug_sql_current_question/1.
+:- abolish(sn_optimized_predicates/1).
+:- dynamic sn_optimized_predicates/1.
+sn_optimized_predicates([]).
+
+:- abolish(debug_dl_current_question/1).
+:- dynamic debug_dl_current_question/1.
+debug_dl_current_question([]).
+
+:- abolish(debug_dl_subset/2).
+:- dynamic debug_dl_subset/2.
+:- abolish(computed_tuples/1).
+:- dynamic computed_tuples/1.
+computed_tuples(0).
+
+:- abolish(my_foreign_key/6).
+:- dynamic my_foreign_key/6.
+:- abolish(timeout/1).
+:- dynamic timeout/1.
+timeout(off).
+
+:- abolish(debug_buggy/1).
+:- dynamic debug_buggy/1.
+:- abolish(curr_parv/1).
+:- dynamic curr_parv/1.
+:- abolish(restricted_predicates/1).
+:- dynamic restricted_predicates/1.
+restricted_predicates([]).
+
+:- abolish(file_table/2).
+:- dynamic file_table/2.
+file_table('c:/users/fernan/desktop/tfg datalog cristina/acide/examples/dldebugger/example1.dl', 1).
+
+:- abolish(debug_dl_current_constraint/1).
+:- dynamic debug_dl_current_constraint/1.
+debug_dl_current_constraint((cts,u_valid(p,no),u_valid(s,no),u_valid(t,no))).
+
+:- abolish(prompt/1).
+:- dynamic prompt/1.
+prompt(des).
+
+:- abolish(info/1).
+:- dynamic info/1.
+info(on).
+
+:- abolish(gen_number_of_tables/1).
+:- dynamic gen_number_of_tables/1.
+:- abolish(debug_random_seed/1).
+:- dynamic debug_random_seed/1.
+:- abolish(debug_tuples/1).
+:- dynamic debug_tuples/1.
+debug_tuples(12).
+
+:- abolish(trusting/1).
+:- dynamic trusting/1.
+trusting(off).
+
+:- abolish(nbr_read_relations/1).
+:- dynamic nbr_read_relations/1.
+:- abolish(pdg/1).
+:- dynamic pdg/1.
+pdg(([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2],[p/1+q/2,p/1+s/1,s/1+r/1,s/1+t/2,t/2+q/2,t/2+r/1,ds/2-employee/3,p/1-r/1])).
+
+:- abolish(latestNameVar/1).
+:- dynamic latestNameVar/1.
+:- abolish(my_persistent/3).
+:- dynamic my_persistent/3.
+:- abolish(my_attribute/5).
+:- dynamic my_attribute/5.
+my_attribute('$des', 1, select_not_null, '$a', _).
+my_attribute('$des', 2, select_not_null, '$b', _).
+my_attribute('$des', 3, select_not_null, '$c', _).
+my_attribute(A, B, C, D, E) :-
+        opened_db(A),
+        A\=='$des',
+        my_odbc_get_colnames(A, C, F),
+        my_nth1_member(D, B, F),
+        my_odbc_get_type(A, C, D, E).
+my_attribute('$des', 1, employee, name, string(varchar)).
+my_attribute('$des', 2, employee, department, string(varchar)).
+my_attribute('$des', 3, employee, salary, number(integer)).
+my_attribute('$des', 1, parking, name, string(varchar)).
+my_attribute('$des', 2, parking, lot, string(varchar)).
+my_attribute('$des', 1, ds, a, string(varchar)).
+my_attribute('$des', 2, ds, b, number(integer)).
+
+:- abolish(type_casting/1).
+:- dynamic type_casting/1.
+type_casting(off).
+
+:- abolish(debug_root_tuples/1).
+:- dynamic debug_root_tuples/1.
+debug_root_tuples(4).
+
+:- abolish(nr_nd_predicates/1).
+:- dynamic nr_nd_predicates/1.
+nr_nd_predicates([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2]).
+
+:- abolish(debug_sql_tuple_subset_question/2).
+:- dynamic debug_sql_tuple_subset_question/2.
+:- abolish(verbose/1).
+:- dynamic verbose/1.
+verbose(off).
+
+:- abolish(mdb_predicates/1).
+:- dynamic mdb_predicates/1.
+mdb_predicates([]).
+
+:- abolish(debug_dl_solutions/1).
+:- dynamic debug_dl_solutions/1.
+debug_dl_solutions([]).
+
+:- abolish(external_pdg/1).
+:- dynamic external_pdg/1.
+external_pdg(on).
+
+:- abolish(running_info/1).
+:- dynamic running_info/1.
+running_info(off).
+
+:- abolish(answer_tuples/1).
+:- dynamic answer_tuples/1.
+answer_tuples(4).
+
+:- abolish(tapi/1).
+:- dynamic tapi/1.
+tapi(on).
+
+:- abolish(non_completeable_predicates/1).
+:- dynamic non_completeable_predicates/1.
+non_completeable_predicates([]).
+
+:- abolish(user_predicates/1).
+:- dynamic user_predicates/1.
+user_predicates([ds/2,employee/3,p/1,parking/2,q/2,r/1,s/1,t/2]).
+
+:- abolish(optimize_ep/1).
+:- dynamic optimize_ep/1.
+optimize_ep(on).
+
+:- abolish('$parv$'/3).
+:- dynamic '$parv$'/3.
+:- abolish(t_closure_updated/1).
+:- dynamic t_closure_updated/1.
+:- abolish(db_modified/1).
+:- dynamic db_modified/1.
+db_modified(false).
+
+:- abolish(pdg_query_build/1).
+:- dynamic pdg_query_build/1.
+pdg_query_build(on).
+
+:- abolish(command_elapsed_time/2).
+:- dynamic command_elapsed_time/2.
+command_elapsed_time(102, 7156989).
+command_elapsed_time(103, 7156990).
+
+:- abolish(editor/1).
+:- dynamic editor/1.
+:- abolish(et_flag/1).
+:- dynamic et_flag/1.
+et_flag(no).
+
+:- abolish(debug_nodes/1).
+:- dynamic debug_nodes/1.
+debug_nodes(0).
+
+:- abolish(sql_semantic_check/1).
+:- dynamic sql_semantic_check/1.
+sql_semantic_check(on).
+
+:- abolish(boolean/1).
+:- dynamic boolean/1.
+boolean(false).
+
+:- abolish(stopwatch/3).
+:- dynamic stopwatch/3.
+stopwatch(0, 0, stop).
+
+:- abolish(last_command_elapsed_time/1).
+:- dynamic last_command_elapsed_time/1.
+last_command_elapsed_time(1).
+
+:- abolish(batch_label/4).
+:- dynamic batch_label/4.
+:- abolish(transitivity/1).
+:- dynamic transitivity/1.
+:- abolish(gt/1).
+:- dynamic gt/1.
+
+:- open_dbs([],[]).
+:- use_db('$des').
+:- open_persistents([]).

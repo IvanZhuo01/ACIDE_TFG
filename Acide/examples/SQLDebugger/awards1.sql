@@ -1,0 +1,5 @@
+
+DROP TABLE IF EXISTS registration;
+DROP TABLE IF EXISTS courses;
+DROP TABLE IF EXISTS allInOneCourse;
+

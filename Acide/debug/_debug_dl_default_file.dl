@@ -1,0 +1,30 @@
+ds(A,B) :- group_by(employee(_C,A,D),[2],[A],B=max(D)).
+employee(anderson,accounting,1200).
+employee(andrews,accounting,1200).
+employee(arlingon,accounting,1000).
+employee(nolan,null,null).
+employee(norton,null,null).
+employee(randall,resources,800).
+employee(sanders,sales,null).
+employee(silver,sales,1000).
+employee(smith,sales,1000).
+employee(steel,sales,1020).
+employee(sullivan,sales,null).
+p(X) :- q(X,B),not r(B).
+p(X) :- s(X).
+parking(anderson,'a-1').
+parking(randall,'r-1').
+parking(silver,'s-1').
+q(a,c).
+q(c,d).
+q(e,e).
+r(a).
+r(b).
+r(c).
+s(f).
+s(X) :- t(B,X),r(B).
+t(X,g) :- r(X).
+t(b,X) :- q(c,X),r(X).
+:-type(ds(a:string,b:int)).
+:-type(parking(name:string,lot:string)).
+:-type(employee(name:string,department:string,salary:int)).

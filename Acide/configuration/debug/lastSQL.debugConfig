@@ -1,0 +1,5 @@
+#Wed Jan 12 22:30:14 CET 2022
+order=cardinality
+debug=full
+trust_tables=no
+trust_file=
